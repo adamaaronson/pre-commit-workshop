@@ -36,7 +36,7 @@ def has_fifth_glyph(filename: str, log: bool) -> bool:
     return False
 
 
-def main(argv: Sequence[str] | None = None) -> int:
+def main(argv: Sequence[str] = None) -> int:
     """
     The command line interface for pr-commit.
 
