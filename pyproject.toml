@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pr-commit"
 version = "0.1.0"
 authors = [{name = "Adam Aaronson", email = "adamaaronson@gmail.com"},]
-description = "A prior-to-commiting hook that forbids all fifth glyphs in naming and coding."
+description = "This hook avoids using fifth-glyphs in naming, writing, and coding."
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = [

@@ -1,0 +1,6 @@
+- id: pr-commit
+  name: pr-commit
+  description: This hook avoids using fifth-glyphs in naming, writing, and coding.
+  entry: pr-commit
+  language: python
+  types: [text]
