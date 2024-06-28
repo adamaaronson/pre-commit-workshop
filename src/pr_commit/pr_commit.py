@@ -64,4 +64,8 @@ def main(argv: Sequence[str] = None) -> int:
 
     args = parser.parse_args(argv)
 
-    return any([has_fifth_glyph(filename, args.log) for filename in args.filenames])
+    return (
+        1
+        if any([has_fifth_glyph(filename, args.log) for filename in args.filenames])
+        else 0
+    )

@@ -3,10 +3,10 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "your-pre-commit-hook"
+name = "pr-commit"
 version = "0.1.0"
-authors = [{name = "Your Name", email = "email@example.com"},]
-description = "TODO"
+authors = [{name = "Adam Aaronson", email = "adamaaronson@gmail.com"},]
+description = "A prior-to-commiting hook that forbids all fifth glyphs in naming and coding."
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = [
@@ -16,15 +16,14 @@ classifiers = [
 urls.Homepage = "https://example.com"
 urls.Documentation = "https://example.com/docs"
 
-dependencies = ["your-hook-dependencies"]
+dependencies = []
 requires-python = ">=3.8"
 optional-dependencies.dev = [
     "pre-commit",  # so you can run hooks on the codebase
     "pytest",  # remember to add tests for your hook
 ]
 
-# TODO
-scripts.script-name = "your_pkg.your_module:hook_function"
+scripts.pr-commit = "pr_commit.pr_commit:main"
 
 # optional (if you are making a package)
 [tool.setuptools.packages.find]
