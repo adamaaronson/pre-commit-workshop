@@ -29,3 +29,12 @@ scripts.script-name = "your_pkg.your_module:hook_function"
 # optional (if you are making a package)
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.numpydoc_validation]
+checks = [
+    "all",   # report on all checks, except the below
+    "EX01",
+    "SA01",
+    "ES01",
+    "SS06",
+]
